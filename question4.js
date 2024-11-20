@@ -9,4 +9,8 @@ const cars = [
 updateCarSpeeds(cars);
 // Returnerar: [{ type: "Volvo", speed: 100 }, { type: "Ford", speed: 100 }]
 
+function updateCarSpeeds(cars) {
+return cars.map((car) => ({type: car.type, speed: 100}))
+}
+
 module.exports = updateCarSpeeds;
